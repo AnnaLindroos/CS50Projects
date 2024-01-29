@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Stock
+{% endblock %}
+
+{% block main %}
+    <form action="/quote" method="post"></form>
+        <div class="mb-3">
+            <p>{{ name }}</p>
+            <p>{{ price | usd }}</p>
+            <p>{{ symbol }}</p>
+        </div>
+{% endblock %}

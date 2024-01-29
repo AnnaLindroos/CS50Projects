@@ -1,0 +1,93 @@
+.header {
+    margin: 15px;
+    text-align:center;
+  }
+
+.container-fluid {
+    font-size: 20px;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+body {
+    font-family:Sans-serif;
+    background-color:#000;
+    color:#fff;
+}
+
+.age {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h2.year {
+    font-size: 400px;
+    font-family: serif;
+    color: #6f42c1;
+    text-align: center;
+    animation: animate
+    1.5s linear infinite;
+}
+
+h3 {
+    padding: 40px;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 50%;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    stroke: #000000;
+    stroke-width: 50px;
+}
+
+#ricefields {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    height: 500px;
+}
+
+#textbox,
+#submit {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 30%;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border: 2px solid white;
+}
+
+a {
+    color: white;
+}
+

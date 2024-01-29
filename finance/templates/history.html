@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    History of transactions
+{% endblock %}
+
+{% block main %}
+    <div class="container-fluid">
+        <h2>History of transactions</h2>
+        <br>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Transaction type</th>
+                    <th>Stock</th>
+                    <th>Shares</th>
+                    <th>Price</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+                {% for transaction in transactions %}
+                    <tr>
+                        <td>{{ transaction["type"] }}</td>
+                        <td>{{ transaction["symbol"] }}</td>
+                        <td>{{ transaction["shares"] | usd }}</td>
+                        <td>{{ transaction["price"] | usd }}</td>
+                        <td>{{ transaction["Timestamp"] }}</td>
+                    </tr>
+                {% endfor %}
+                <!-- TODO: Loop through the database entries to display them in this table -->
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

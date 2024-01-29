@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "string": "c",
+        "dictionary.h": "c",
+        "stdbool.h": "c",
+        "ctype.h": "c"
+    },
+    "gitdoc.enabled": true
+}

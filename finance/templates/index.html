@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    Stocks owned
+{% endblock %}
+
+{% block main %}
+    <div class="container-fluid">
+        <h2>Stocks owned</h2>
+        <br>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Stocks owned</th>
+                    <th>Shares</th>
+                    <th>Price per stock</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for portfolio in portfolios %}
+                    <tr>
+                        <td>{{ portfolio["stocks_owned"] }}</td>
+                        <td>{{ portfolio["stock_shares"] }}</td>
+                        <td>{{ portfolio["price_per_stock"] | usd }}</td>
+                        <td>{{ portfolio["val"] | usd }}</td>
+                    </tr>
+                {% endfor %}
+                <!-- TODO: Loop through the database entries to display them in this table -->
+            </tbody>
+        </table>
+        <br>
+        <div class="currentvalue">
+            <h6>Current cash balance</h6>
+                <p>{{ cashBalance | usd }}</p>
+            <h6>Total value</h6>
+                <p>{{ totalValue | usd }}</p>
+        </div>
+    </div>
+{% endblock %}

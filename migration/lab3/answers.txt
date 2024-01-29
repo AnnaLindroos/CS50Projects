@@ -1,0 +1,17 @@
+sort1 uses: Bubble sort
+
+How do you know?: 
+When the array is sorted, bubble sort only has to iterate over the array once. 
+This means that the bubble sort algorithm would finish significantly faster with a sorted array than with a random or reversed array.
+
+sort2 uses: Merge sort
+
+How do you know?:
+Merge sort takes about the same amout of time to finish whether the array is sorted, reversed or randomized. 
+As the size of the array increases, the running time will increase roughly linearly 
+
+sort3 uses: Selection sort
+
+How do you know?:
+Selection sort takes about the same amount of time whether the array is sorted, random or reversed.
+As the size of the array increases, the running time will increase exponentially

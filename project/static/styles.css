@@ -1,0 +1,31 @@
+.card-body {
+    background-color: #E5D4CE;
+    color: black;
+    left: 0px;
+    top: 0px;
+    transition: left .5s cubic-bezier(.42,-0.3,.78,1.25),
+    top .5s cubic-bezier(.42,-0.3,.78,1.25);
+}
+
+#firstCard,
+#secondCard {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#footer {
+    position: fixed;
+    left: 50%;
+    bottom: 50px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+
+.gradient {
+    height: 300px;
+    width: 300px;
+    background-image: linear-gradient(to right, #09A9D4 ,#05DE7F);
+}
+
+body {
+    background-color: #05DE7F;
+}5445

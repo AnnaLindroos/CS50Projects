@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    Discgolf
+{% endblock %}
+
+{% block main %}
+    <div class="main">
+        <form action="/" method="get">
+            <button class="btn btn-primary" type="submit">Nästa</button>
+        </form>
+        <br>
+
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col" id="firstCard">
+                <div class="card h-100">
+                <div class="card-body">
+                    <p class="card-text">{{ first["challenge"] }}</p>
+                </div>
+                </div>
+            </div>
+            <div class="col" id="secondCard">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <p class="card-text">{{ second["challenge"] }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
